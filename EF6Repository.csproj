@@ -65,6 +65,9 @@
   <ItemGroup>
     <Compile Include="Entities\ApplicationRole.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
+    <Compile Include="Entities\Department.cs" />
+    <Compile Include="Services\DepartmentService.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
     <Compile Include="SQLConfiguration.cs" />
     <Compile Include="SQLDbContext.cs" />
     <Compile Include="OracleConfiguration.cs" />
@@ -75,11 +78,11 @@
     <Compile Include="Seed.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".gitignore" />
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="README.md" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

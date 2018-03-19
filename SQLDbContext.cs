@@ -8,6 +8,8 @@ namespace EF6Repository
     public class SQLDbContext : IdentityDbContext<ApplicationUser>
     {
 
+        public virtual DbSet<Department> Departments { get; set; }
+
         public SQLDbContext()
             : base("dbContext", throwIfV1Schema: false)
         {
